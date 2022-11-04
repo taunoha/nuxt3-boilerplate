@@ -1,0 +1,10 @@
+:root {
+  font-size: clamp(12px, 2vw, 18px);
+}
+
+@layer base {
+  html {
+    font-family: "Open Sans", sans-serif;
+    @apply bg-secondary;
+  }
+}

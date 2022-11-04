@@ -1,0 +1,40 @@
+name: Deploy to development server
+run-name: ${{ github.actor }} is deploying a new version to the development server
+
+on: 
+  push:
+    branches: [develop]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Install SSH Key
+        uses: benoitchantre/setup-ssh-authentication-action@1.0.0
+        with:
+          private-key: ${{ secrets.DEV_PRIVATE_KEY }} 
+          known-hosts: unnecessary
+      - name: Adding Known Hosts
+        run: ssh-keyscan -H ${{ secrets.DEV_HOST }} >> ~/.ssh/known_hosts
+      - uses: actions/checkout@v3
+      - name: Use Node.js v16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build
+      - name: Copy build files to the development server
+        run: rsync -avzr --delete .output ${{ secrets.DEV_USER }}@${{ secrets.DEV_HOST }}:${{ secrets.DEV_BUILD_PATH }}
+      - name: Restart the app on the development server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DEV_HOST }}
+          username: ${{ secrets.DEV_USER }}
+          key: ${{ secrets.DEV_PRIVATE_KEY }} 
+          script: |
+            cd ${{ secrets.DEV_BUILD_PATH }}
+            cd ..
+            pm2 reload ecosystem.config.js --update-env
+
+    

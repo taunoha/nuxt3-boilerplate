@@ -15,7 +15,7 @@ module.exports = {
     "plugin:prettier/recommended",
     "plugin:nuxt/recommended",
   ],
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "check-file"],
   rules: {
     "vue/script-setup-no-uses-vars": "off",
     "@typescript-eslint/no-unused-vars": "error",
@@ -25,10 +25,15 @@ module.exports = {
         htmlWhitespaceSensitivity: "ignore",
       },
     ],
+    "check-file/filename-naming-convention": [
+      "error", {
+        "./pages/**/*": "*([^A-Z])"
+      }
+    ]
   },
   overrides: [
     {
-      files: "./pages/*",
+      files: "./pages/**/*",
       rules: {
         "vue/multi-word-component-names": "off",
       },

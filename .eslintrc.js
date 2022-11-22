@@ -27,13 +27,13 @@ module.exports = {
     ],
     "check-file/filename-naming-convention": [
       "error", {
-        "./pages/**/*": "*([^A-Z])"
+        "./pages/**/*": "*([^A-Z])",
       }
     ]
   },
   overrides: [
     {
-      files: "./pages/**/*",
+      files: ["./pages/**/*", "./layouts/*"],
       rules: {
         "vue/multi-word-component-names": "off",
       },

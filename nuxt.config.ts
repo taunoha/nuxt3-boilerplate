@@ -24,6 +24,7 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
+    authEnabled: false,
     authUser: "project",
     authPass: "project",
     environment: "develop",

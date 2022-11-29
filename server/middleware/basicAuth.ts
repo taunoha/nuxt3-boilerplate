@@ -1,21 +1,21 @@
+import auth from "basic-auth";
+
 export default defineEventHandler((event) => {
   const config = useRuntimeConfig();
-  let allow = !["develop", "staging", "stage"].includes(config.environment);
-
-  const base64Credentials = event.req.headers?.authorization?.split(" ")?.[1];
-
-  if (base64Credentials) {
-    const credentials = Buffer.from(base64Credentials, "base64").toString(
-      "ascii"
+  const credentials = auth(event.req);
+  const isValid = (credentials: auth.BasicAuthResult) => {
+    return (
+      credentials &&
+      config.authUser === credentials.name &&
+      config.authPass === credentials.pass
     );
-    const [username, password] = credentials.split(":");
+  };
 
-    allow = username === config.authUser && password === config.authPass;
-  }
-
-  if (!allow) {
-    event.res.statusCode = 401;
-    event.res.setHeader("WWW-Authenticate", 'Basic realm=""');
-    event.res.end("Unauthorized");
+  if (config.authEnabled && (!credentials || !isValid(credentials))) {
+    setHeader(event, "WWW-Authenticate", 'Basic realm=""');
+    sendError(
+      event,
+      createError({ statusCode: 401, statusMessage: "Access denied" })
+    );
   }
 });

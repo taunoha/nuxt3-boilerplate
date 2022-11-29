@@ -14,7 +14,7 @@ A Nuxt 3 starter boilerplate with a lot of useful features.
 - [x] Setup ESLint and Prettier to check and format code as recommended by Vue, Nuxt and Tailwind CSS
 - [x] Setup [Husky](https://typicode.github.io/husky/) with [lint-staged](https://github.com/okonet/lint-staged)
 
-- [x] HTTP Basic access authentication for develop, staging or stage environments (server/middleware/basicAuth.ts)
+- [x] HTTP Basic access authentication (server/middleware/basicAuth.ts)
 - [x] Github Action for automated CI/CD to remote server using SSH
 
 ## Setup

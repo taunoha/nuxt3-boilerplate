@@ -1,8 +1,5 @@
 <script lang="ts" setup>
-const { data, pending } = await useFetch("/api/v1/mountains", {
-  method: "get",
-  server: false,
-});
+const { data, error } = await useFetch("/api/v1/mountains");
 const mountains = computed(() => data?.value?.mountains || []);
 useHead({
   title: "Hello, World!",
@@ -20,12 +17,10 @@ useHead({
         </h1>
         <p class="mb-6">Can you see me?</p>
         <small class="flex flex-wrap justify-center gap-2">
-          <template v-if="pending">Loading...</template>
-          <template v-else>
-            <span v-for="item in mountains" :key="item.title">
-              {{ item.title }}
-            </span>
-          </template>
+          <span v-for="item in mountains" :key="item.title">
+            {{ item.title }}
+          </span>
+          <div v-if="error">{{ error }}</div>
         </small>
       </div>
     </main>

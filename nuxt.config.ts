@@ -23,6 +23,9 @@ export default defineNuxtConfig({
       },
     },
   },
+  routeRules: {
+    "/api/**": { cors: true },
+  },
   runtimeConfig: {
     authEnabled: false,
     authUser: "project",

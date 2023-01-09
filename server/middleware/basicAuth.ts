@@ -10,12 +10,13 @@ export default defineEventHandler((event) => {
       config.authPass === credentials.pass
     );
   };
-
-  if (config.authEnabled && (!credentials || !isValid(credentials))) {
-    setHeader(event, "WWW-Authenticate", 'Basic realm=""');
-    sendError(
-      event,
-      createError({ statusCode: 401, statusMessage: "Access denied" })
-    );
+  if (!event.context._nitro.routeRules?.cors) {
+    if (config.authEnabled && (!credentials || !isValid(credentials))) {
+      setHeader(event, "WWW-Authenticate", 'Basic realm=""');
+      sendError(
+        event,
+        createError({ statusCode: 401, statusMessage: "Access denied" })
+      );
+    }
   }
 });

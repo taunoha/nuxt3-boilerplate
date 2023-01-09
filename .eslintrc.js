@@ -26,14 +26,16 @@ module.exports = {
       },
     ],
     "check-file/filename-naming-convention": [
-      "error", {
+      "error",
+      {
         "./pages/**/*": "*([^A-Z])",
-      }
-    ]
+      },
+    ],
+    "@typescript-eslint/no-explicit-any": "off",
   },
   overrides: [
     {
-      files: ["./pages/**/*", "./layouts/*"],
+      files: ["./pages/**/*", "./layouts/*", "error.vue"],
       rules: {
         "vue/multi-word-component-names": "off",
       },

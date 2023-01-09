@@ -2,7 +2,7 @@ import auth from "basic-auth";
 
 export default defineEventHandler((event) => {
   const config = useRuntimeConfig();
-  const credentials = auth(event.req);
+  const credentials = auth(event.node.req);
   const isValid = (credentials: auth.BasicAuthResult) => {
     return (
       credentials &&

@@ -1,7 +1,7 @@
 import auth from "basic-auth";
 
 export default defineEventHandler((event) => {
-  const config = useRuntimeConfig();
+  const config = useRuntimeConfig().public;
   const credentials = auth(event.node.req);
   const isValid = (credentials: auth.BasicAuthResult) => {
     return (
@@ -10,6 +10,7 @@ export default defineEventHandler((event) => {
       config.authPass === credentials.pass
     );
   };
+
   if (!event.context._nitro.routeRules?.cors) {
     if (config.authEnabled && (!credentials || !isValid(credentials))) {
       setHeader(event, "WWW-Authenticate", 'Basic realm=""');

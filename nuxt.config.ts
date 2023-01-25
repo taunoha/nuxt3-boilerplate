@@ -11,14 +11,11 @@ export default defineNuxtConfig({
     config: {
       content: [],
       theme: {
-        fontFamily: {
-          heading: ["Arial", "sans-serif"],
-          body: ["Roboto", "sans-serif"],
-        },
         colors: {
           primary: "#005138",
           secondary: "#549973",
           accent: "#ffe4bd",
+          white: "#ffffff",
         },
       },
     },
@@ -27,11 +24,13 @@ export default defineNuxtConfig({
     "/api/**": { cors: true },
   },
   runtimeConfig: {
-    authEnabled: false,
-    authUser: "project",
-    authPass: "project",
-    environment: "develop",
-    buildAt: "",
+    public: {
+      authEnabled: true,
+      authUser: "project",
+      authPass: "project",
+      buildAt: "",
+      environment: "local",
+    },
   },
   telemetry: false,
 });

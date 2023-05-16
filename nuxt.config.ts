@@ -24,6 +24,10 @@ export default defineNuxtConfig({
     "/api/**": { cors: true },
   },
   security: {
+    headers: {
+      crossOriginEmbedderPolicy:
+        process.env.NODE_ENV === "development" ? "unsafe-none" : "require-corp",
+    },
     basicAuth: {
       enabled: false,
       name: "test",

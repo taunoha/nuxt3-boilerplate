@@ -23,11 +23,16 @@ export default defineNuxtConfig({
   routeRules: {
     "/api/**": { cors: true },
   },
+  security: {
+    basicAuth: {
+      enabled: false,
+      name: "test",
+      pass: "test",
+      message: "Basic Auth Required",
+    },
+  },
   runtimeConfig: {
     public: {
-      authEnabled: false,
-      authUser: "project",
-      authPass: "project",
       buildAt: "",
       environment: "local",
     },

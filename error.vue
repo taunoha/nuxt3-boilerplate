@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 const route = useRoute();
-setResponseStatus(404);
 </script>
 
 <template>

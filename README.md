@@ -9,12 +9,11 @@ A Nuxt 3 starter boilerplate with a lot of useful features.
 - [x] [VueUse](https://vueuse.org/guide/#nuxt)
 - [x] [Tailwind CSS](https://tailwindcss.nuxtjs.org)
 - [x] [nuxt-icon](https://github.com/nuxt-modules/icon)
-- [x] [nuxt-security](https://github.com/Baroshem/nuxt-security)
+- [x] [nuxt-security](https://github.com/Baroshem/nuxt-security) (among other things, it also offers the possibility to use Basic Auth authorization)
 
 - [x] Setup ESLint and Prettier to check and format code as recommended by Vue, Nuxt and Tailwind CSS
 - [x] Setup [Husky](https://typicode.github.io/husky/) with [lint-staged](https://github.com/okonet/lint-staged)
 
-- [x] HTTP Basic access authentication (server/middleware/basicAuth.ts)
 - [x] Github Action for automated CI/CD to remote server using SSH
 
 ## Setup

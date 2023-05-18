@@ -5,7 +5,7 @@ const container = () => {
   const slot = slots.default ? slots.default() : null;
   const config = useRuntimeConfig().public;
 
-  if (config?.environment === "local" && slot) {
+  if (process.dev && config?.environment === "local" && slot) {
     return h(
       "div",
       {
@@ -22,6 +22,8 @@ const container = () => {
       ]
     );
   }
+
+  return null;
 };
 </script>
 

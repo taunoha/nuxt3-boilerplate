@@ -18,18 +18,16 @@ export default defineEventHandler(async () => {
    *
    * @link https://nuxt.com/docs/api/utils/dollarfetch
    */
-  let error = null;
-  const mountains = await $fetch("https://api.nuxtjs.dev/mountains").catch(
-    (err) =>
-      (error = createError({
-        statusCode: err.data.statusCode,
-        message: err.data.message,
-      }))
-  );
+  const mountains = await $fetch<Mountains[]>(
+    "https://api.nuxtjs.dev/mountains"
+  ).catch((error) => {
+    throw createError({
+      statusCode: error.statusCode,
+      statusMessage: error.statusMessage,
+    });
+  });
 
-  if (error) {
-    return error;
-  }
-
-  return { mountains: mountains as Mountains[] };
+  return {
+    mountains,
+  };
 });

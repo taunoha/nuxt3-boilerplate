@@ -8,17 +8,7 @@ export default defineNuxtConfig({
   ],
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
-    config: {
-      content: [],
-      theme: {
-        colors: {
-          primary: "#005138",
-          secondary: "#549973",
-          accent: "#ffe4bd",
-          white: "#ffffff",
-        },
-      },
-    },
+    configPath: "~/tailwind.config.js",
   },
   routeRules: {
     "/api/**": { cors: true },

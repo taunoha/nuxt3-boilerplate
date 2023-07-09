@@ -10,7 +10,7 @@ const container = () => {
       "div",
       {
         class:
-          "text-[10px] p-4 border bg-white shadow-sm border-body/50 rounded-md my-4 mx-2 overflow-hidden overflow-x-auto text-left",
+          "font-mono text-primary text-[10px] p-4 border bg-white shadow-sm border-body/50 rounded-md my-4 mx-2 overflow-hidden overflow-x-auto text-left max-w-screen",
       },
       [
         h(

@@ -13,7 +13,7 @@ useHead({
       <div class="text-center">
         <Icon name="logos:nuxt-icon" class="mb-5" size="80"></Icon>
         <h1 class="font-display mb-6 text-center text-5xl">
-          <b class="text-primary p-4 pt-2">Hello, World!</b>
+          <b class="p-4 pt-2 text-primary">Hello, World!</b>
         </h1>
         <p class="mb-6">Can you see me?</p>
         <small class="flex flex-wrap justify-center gap-2">

@@ -4,7 +4,6 @@
 
 @layer base {
   html {
-    font-family: "Open Sans", sans-serif;
     @apply bg-secondary antialiased;
   }
 }

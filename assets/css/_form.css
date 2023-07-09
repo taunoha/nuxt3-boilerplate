@@ -1,3 +1,5 @@
-.form-group {
-  @apply mb-2;
+@layer components {
+  .form-group {
+    @apply mb-2;
+  }
 }

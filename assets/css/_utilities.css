@@ -1,0 +1,35 @@
+@layer utilities {
+  .min-h-screen-safe {
+    min-height: 100vh;
+  }
+
+  @supports (min-height: 100svh) {
+    .min-h-screen-safe {
+      min-height: 100svh;
+    }
+  }
+
+  .min-w-screen-safe {
+    min-width: 100vw;
+  }
+
+  @supports (min-width: 100svw) {
+    .min-w-screen-safe {
+      min-width: 100svw;
+    }
+  }
+
+  .h-screen-safe {
+    height: 100vh;
+  }
+
+  @supports (min-height: 100svh) {
+    .h-screen-safe {
+      height: 100svh;
+    }
+  }
+
+  .whitespace-balance {
+    text-wrap: balance;
+  }
+}

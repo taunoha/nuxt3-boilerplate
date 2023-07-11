@@ -31,5 +31,11 @@ export default defineNuxtConfig({
       environment: "local",
     },
   },
+  devtools: {
+    enabled: true,
+  },
+  typescript: {
+    strict: true,
+  },
   telemetry: false,
 });

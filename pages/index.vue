@@ -1,10 +1,6 @@
 <script lang="ts" setup>
 const { data, error } = await useFetch("/api/v1/mountains");
 const mountains = computed(() => data?.value?.mountains || []);
-useHead({
-  title: "Hello, World!",
-  titleTemplate: "%s - Nuxt3 Boilerplate",
-});
 </script>
 
 <template>

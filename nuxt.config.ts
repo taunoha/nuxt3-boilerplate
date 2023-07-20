@@ -25,6 +25,13 @@ export default defineNuxtConfig({
       message: "Basic Auth Required",
     },
   },
+  app: {
+    head: {
+      title: "Hello, World!",
+      titleTemplate: "%s - Nuxt3 Boilerplate",
+      link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+    },
+  },
   runtimeConfig: {
     public: {
       buildAt: "",

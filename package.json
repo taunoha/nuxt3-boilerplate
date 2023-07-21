@@ -27,7 +27,7 @@
     "eslint-plugin-vue": "^9.15.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
-    "nuxt": "^3.6.2",
+    "nuxt": "^3.6.5",
     "nuxt-icon": "^0.4.2",
     "nuxt-security": "^0.13.1",
     "prettier": "^2.8.8",

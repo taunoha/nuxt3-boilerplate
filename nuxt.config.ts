@@ -34,7 +34,9 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      buildAt: "",
+      buildAt: new Date().toLocaleString("nb-US", {
+        timeZone: "Europe/Helsinki",
+      }),
       environment: "local",
     },
   },
@@ -43,6 +45,9 @@ export default defineNuxtConfig({
   },
   typescript: {
     strict: true,
+  },
+  experimental: {
+    typedPages: true,
   },
   telemetry: false,
 });

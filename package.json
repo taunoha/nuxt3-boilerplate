@@ -4,12 +4,17 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "postinstall": "nuxt prepare && npx husky install",
-    "lint": "eslint --ext .ts,.vue --ignore-path .eslintignore . --fix"
+    "lint": "eslint --ext .ts,.vue --ignore-path .eslintignore . --fix",
+    "typecheck": "npx nuxi typecheck"
   },
   "lint-staged": {
     "*.{vue,ts}": [
-      "npm run lint"
+      "npm run lint",
+      "npm run typecheck ."
     ]
+  },
+  "engines": {
+    "node": "18.x"
   },
   "devDependencies": {
     "@nuxt/devtools": "^0.6.7",

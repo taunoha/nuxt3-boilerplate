@@ -1,6 +1,37 @@
 <script lang="ts" setup>
-const { data, error } = await useFetch("/api/v1/mountains");
-const mountains = computed(() => data?.value?.mountains || []);
+import { Mountains } from "types";
+
+const mountains = ref<Mountains[]>([]);
+
+const fetchMontains = async () => {
+  const { data, error } = await useFetch("/api/v1/mountains");
+
+  if (error.value) {
+    throw createError({ ...error.value, statusMessage: "Mountains Not Found" });
+  }
+
+  if (data.value) {
+    mountains.value = data.value;
+  }
+};
+
+watchEffect(() => {
+  console.log("watcheffect", mountains.value);
+});
+
+watch(mountains, (value) => {
+  console.log("watch", value);
+});
+
+onMounted(() => {
+  console.log("mounted", mountains.value);
+});
+
+useHead({
+  title: "Mountains",
+});
+
+await fetchMontains();
 </script>
 
 <template>
@@ -16,7 +47,6 @@ const mountains = computed(() => data?.value?.mountains || []);
           <span v-for="item in mountains" :key="item.title">
             {{ item.title }}
           </span>
-          <div v-if="error">{{ error }}</div>
         </small>
       </div>
     </main>

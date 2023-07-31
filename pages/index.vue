@@ -7,7 +7,10 @@ const fetchMontains = async () => {
   const { data, error } = await useFetch("/api/v1/mountains");
 
   if (error.value) {
-    throw createError({ ...error.value, statusMessage: "Mountains Not Found" });
+    throw createError({
+      ...error.value,
+      statusMessage: "Mountains Not Found",
+    });
   }
 
   if (data.value) {
@@ -38,7 +41,7 @@ await fetchMontains();
   <div class="flex min-h-screen flex-col">
     <main class="flex grow items-center justify-center">
       <div class="text-center">
-        <Icon name="logos:nuxt-icon" class="mb-5" size="80"></Icon>
+        <Icon name="logos:nuxt-icon" class="mb-5" size="80" />
         <h1 class="font-display mb-6 text-center text-5xl">
           <b class="p-4 pt-2 text-primary">Hello, World!</b>
         </h1>

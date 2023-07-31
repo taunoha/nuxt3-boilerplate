@@ -17,6 +17,13 @@ jobs:
       - name: Adding Known Hosts
         run: ssh-keyscan -H ${{ secrets.DEV_HOST }} >> ~/.ssh/known_hosts
       - uses: actions/checkout@v3
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v2.0.2
+        with:
+          envkey_ENVIRONMENT: development
+          envkey_PORT: 3000
+          fail_on_empty: true
+          file_name: .env.production
       - name: Use Node.js v18
         uses: actions/setup-node@v3
         with:
@@ -34,7 +41,6 @@ jobs:
           key: ${{ secrets.DEV_PRIVATE_KEY }} 
           script: |
             cd ${{ secrets.DEV_BUILD_PATH }}
-            cd ..
             pm2 reload ecosystem.config.js --update-env
 
     

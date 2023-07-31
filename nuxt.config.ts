@@ -37,7 +37,7 @@ export default defineNuxtConfig({
       buildAt: new Date().toLocaleString("nb-US", {
         timeZone: "Europe/Helsinki",
       }),
-      environment: "local",
+      environment: process.env.ENVIRONMENT || "local",
     },
   },
   devtools: {

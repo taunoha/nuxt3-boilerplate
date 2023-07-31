@@ -23,7 +23,7 @@ jobs:
           envkey_ENVIRONMENT: development
           envkey_PORT: 3000
           fail_on_empty: true
-          file_name: .env.production
+          file_name: .env
       - name: Use Node.js v18
         uses: actions/setup-node@v3
         with:

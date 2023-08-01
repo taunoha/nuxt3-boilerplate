@@ -18,7 +18,7 @@ useHead({
   <div class="min-h-screen-safe flex flex-col justify-center text-center">
     <main class="container">
       <Icon name="logos:nuxt-icon" class="mb-5" size="80" />
-      <h1 class="font-display mb-6 text-center text-5xl font-bold text-primary">
+      <h1 class="font-display mb-6 text-center text-5xl font-bold">
         {{ is404 ? "Page Not Found" : "An error occurred" }}
       </h1>
       <p class="mb-12">

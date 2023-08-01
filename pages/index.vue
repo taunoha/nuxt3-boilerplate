@@ -38,20 +38,18 @@ await fetchMontains();
 </script>
 
 <template>
-  <div class="flex min-h-screen flex-col">
-    <main class="flex grow items-center justify-center">
-      <div class="text-center">
-        <Icon name="logos:nuxt-icon" class="mb-5" size="80" />
-        <h1 class="font-display mb-6 text-center text-5xl">
-          <b class="p-4 pt-2 text-primary">Hello, World!</b>
-        </h1>
-        <p class="mb-6">Can you see me?</p>
-        <small class="flex flex-wrap justify-center gap-2">
-          <span v-for="item in mountains" :key="item.title">
-            {{ item.title }}
-          </span>
-        </small>
-      </div>
+  <div class="min-h-screen-safe flex flex-col justify-center text-center">
+    <main class="container">
+      <Icon name="logos:nuxt-icon" class="mb-5" size="80" />
+      <h1 class="font-display mb-6 text-center text-5xl font-bold">
+        Hello, World!
+      </h1>
+      <p class="mb-12">Can you see me?</p>
+      <p class="mx-auto flex max-w-xl flex-wrap justify-center gap-2">
+        <span v-for="item in mountains" :key="item.title">
+          {{ item.title }}
+        </span>
+      </p>
     </main>
   </div>
 </template>

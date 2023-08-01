@@ -13,12 +13,19 @@ export default {
         "monospace",
       ],
     },
+    container: {
+      center: true,
+      padding: "1.5rem",
+    },
     extend: {
       colors: {
-        primary: "#005138",
-        secondary: "#549973",
-        accent: "#ffe4bd",
-        white: "#ffffff",
+        primary: "#1e1e20",
+        secondary: "#02a99c",
+        dark: '#25252a',
+        light: "#e3e3da",
+        success: "#2ec946",
+        danger: "#ff3838",
+        body: "#1e1e20",
       },
     }
   },

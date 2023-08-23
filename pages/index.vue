@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Mountains } from "types";
+import { Mountains } from "~/types";
 
 const mountains = ref<Mountains[]>([]);
 

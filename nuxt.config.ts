@@ -1,6 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: [
+    "@nuxt/devtools",
     "nuxt-security",
     "@vueuse/nuxt",
     "@nuxtjs/tailwindcss",
@@ -40,9 +41,7 @@ export default defineNuxtConfig({
       environment: process.env.ENVIRONMENT || "local",
     },
   },
-  devtools: {
-    enabled: true,
-  },
+  watch: ["tailwind.config.js"],
   typescript: {
     strict: true,
   },

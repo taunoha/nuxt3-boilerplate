@@ -30,6 +30,7 @@ jobs:
           node-version: 18
           cache: 'npm'
       - run: npm ci
+      - run: npm run typecheck 
       - run: npm run build
       - name: Copy build files to the development server
         run: rsync -avzr --delete .output ${{ secrets.DEV_USER }}@${{ secrets.DEV_HOST }}:${{ secrets.DEV_BUILD_PATH }}

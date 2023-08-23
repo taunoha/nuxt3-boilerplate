@@ -5,12 +5,12 @@
     "dev": "nuxt dev",
     "postinstall": "nuxt prepare && npx husky install",
     "lint": "eslint --ext .ts,.vue --ignore-path .eslintignore . --fix",
-    "typecheck": "npx nuxi typecheck"
+    "typecheck": "npx nuxi typecheck ."
   },
   "lint-staged": {
     "*.{vue,ts}": [
       "npm run lint",
-      "npm run typecheck ."
+      "npm run typecheck"
     ]
   },
   "engines": {

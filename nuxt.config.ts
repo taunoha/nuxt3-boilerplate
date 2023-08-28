@@ -47,6 +47,7 @@ export default defineNuxtConfig({
   },
   experimental: {
     typedPages: true,
+    headNext: true,
   },
   telemetry: false,
 });

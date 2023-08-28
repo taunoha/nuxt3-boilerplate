@@ -2,6 +2,7 @@
   "extends": "../.nuxt/tsconfig.server.json",
   "exclude": [
     "../tailwind.config.js",
-    "../ecosystem.config.js"
+    "../ecosystem.config.js",
+    "../prettier.config.js"
   ]
 }

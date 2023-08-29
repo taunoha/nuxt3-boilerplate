@@ -19,15 +19,23 @@ const fetchMontains = async () => {
 };
 
 watchEffect(() => {
-  console.log("watcheffect", mountains.value);
+  console.log(
+    `[${process.client ? "client" : "server"}]`,
+    "watcheffect",
+    mountains.value
+  );
 });
 
 watch(mountains, (value) => {
-  console.log("watch", value);
+  console.log(`[${process.client ? "client" : "server"}]`, "watch", value);
 });
 
 onMounted(() => {
-  console.log("mounted", mountains.value);
+  console.log(
+    `[${process.client ? "client" : "server"}]`,
+    "mounted",
+    mountains.value
+  );
 });
 
 useHead({

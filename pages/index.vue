@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { Mountains } from "~/types";
+import type { Mountain } from "~/types";
 
-const mountains = ref<Mountains[]>([]);
+const mountains = ref<Mountain[]>([]);
 
 const fetchMontains = async () => {
   const { data, error } = await useFetch("/api/v1/mountains");

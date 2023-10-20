@@ -1,4 +1,4 @@
-import { Mountains } from "~/types";
+import type { Mountain } from "~/types";
 
 export default defineEventHandler(() => {
   /**
@@ -8,5 +8,5 @@ export default defineEventHandler(() => {
    * @link https://nuxt.com/docs/api/utils/dollarfetch
    * @link https://github.com/unjs/ofetch
    */
-  return $fetch<Mountains[]>("https://api.nuxtjs.dev/mountains");
+  return $fetch<Mountain[]>("https://api.nuxtjs.dev/mountains");
 });

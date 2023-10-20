@@ -1,4 +1,4 @@
-export interface Mountains {
+export interface Mountain {
   title: string;
   description: string;
   height: string;

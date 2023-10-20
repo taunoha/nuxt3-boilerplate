@@ -32,4 +32,12 @@
   .whitespace-balance {
     text-wrap: balance;
   }
+
+  .scrollbar-gutter-stable {
+    scrollbar-gutter: stable;
+  }
+
+  .ct-inline {
+    container-type: inline-size;
+  }
 }

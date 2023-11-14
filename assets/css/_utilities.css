@@ -33,9 +33,14 @@
     text-wrap: balance;
   }
 
+  .whitespace-pretty {
+    text-wrap: pretty;
+  }
+
   .scrollbar-gutter-stable {
     scrollbar-gutter: stable;
   }
+  
 
   .ct-inline {
     container-type: inline-size;

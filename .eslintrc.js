@@ -18,7 +18,9 @@ module.exports = {
   plugins: ["@typescript-eslint", "check-file"],
   rules: {
     "vue/script-setup-no-uses-vars": "off",
-    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "argsIgnorePattern": "^_",
+    }],
     "prettier/prettier": [
       "error",
       {

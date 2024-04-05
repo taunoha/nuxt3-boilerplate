@@ -37,7 +37,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["./pages/**/*", "./layouts/*", "error.vue"],
+      files: ["./pages/**/*", "./layouts/*", "error.vue", "./components/**/*"],
       rules: {
         "vue/multi-word-component-names": "off",
       },

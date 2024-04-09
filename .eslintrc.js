@@ -20,6 +20,8 @@ module.exports = {
     "vue/script-setup-no-uses-vars": "off",
     "@typescript-eslint/no-unused-vars": ["error", {
       "argsIgnorePattern": "^_",
+      "varsIgnorePattern": "^_",
+      "caughtErrorsIgnorePattern": "^_"
     }],
     "prettier/prettier": [
       "error",

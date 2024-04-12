@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 export default {
   theme: {
     fontFamily: {
@@ -19,14 +20,9 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#1e1e20",
-        secondary: "#02a99c",
-        dark: '#25252a',
-        light: "#e3e3da",
-        success: "#2ec946",
-        danger: "#ff3838",
-        body: "#1e1e20",
+        primary: "#00dc82",
+        secondary: "#080b23",
       },
-    }
+    },
   },
-}
+};

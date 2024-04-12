@@ -11,17 +11,11 @@ A Nuxt 3 starter boilerplate with a lot of useful features.
 - [x] [nuxt-icon](https://github.com/nuxt-modules/icon)
 - [x] [nuxt-security](https://github.com/Baroshem/nuxt-security) (among other things, it also offers the possibility to use Basic Auth authorization)
 
-- [x] Setup ESLint and Prettier to check and format code as recommended by Vue, Nuxt and Tailwind CSS
+- [x] Setup ESLint ([Nuxt ESLint module](https://eslint.nuxt.com/packages/module)), Stylelint and Prettier to check and format code as recommended by Vue, Nuxt and Tailwind CSS
 - [x] Setup [Husky](https://typicode.github.io/husky/) with [lint-staged](https://github.com/okonet/lint-staged)
 
 - [x] Github Action for automated CI/CD to remote server using SSH
-
-## Setup
-
-To enable Husky after you have created Git repository, install Husky using this command:
-```shell
-npx husky install
-```
+- [x] [pm2](https://pm2.keymetrics.io) config example file
 
 ## Changelog
 

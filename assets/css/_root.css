@@ -4,6 +4,6 @@
 
 @layer base {
   html {
-    @apply bg-secondary antialiased text-body;
+    @apply bg-secondary text-white antialiased;
   }
 }

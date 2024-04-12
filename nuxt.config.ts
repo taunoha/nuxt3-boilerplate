@@ -1,30 +1,22 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  devtools: {
+    enabled: true,
+  },
   modules: [
     "@nuxt/devtools",
-    "nuxt-security",
-    "@vueuse/nuxt",
+    "@nuxt/eslint",
     "@nuxtjs/tailwindcss",
+    "@vueuse/nuxt",
     "nuxt-icon",
+    "nuxt-security",
   ],
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
-    configPath: "~/tailwind.config.js",
+    configPath: "~/tailwind.config.mjs",
   },
   routeRules: {
     "/api/**": { cors: true },
-  },
-  security: {
-    headers: {
-      crossOriginEmbedderPolicy:
-        process.env.NODE_ENV === "development" ? "unsafe-none" : "require-corp",
-    },
-    basicAuth: {
-      enabled: false,
-      name: "test",
-      pass: "test",
-      message: "Basic Auth Required",
-    },
   },
   app: {
     head: {
@@ -41,13 +33,20 @@ export default defineNuxtConfig({
       environment: process.env.ENVIRONMENT || "local",
     },
   },
-  watch: ["tailwind.config.js"],
+  security: {
+    headers: {
+      crossOriginEmbedderPolicy:
+        process.env.NODE_ENV === "development" ? "unsafe-none" : "require-corp",
+    },
+    basicAuth: {
+      enabled: false,
+      name: "test",
+      pass: "test",
+      message: "Basic Auth Required",
+    },
+  },
   typescript: {
     strict: true,
-  },
-  experimental: {
-    typedPages: true,
-    headNext: true,
   },
   telemetry: false,
 });

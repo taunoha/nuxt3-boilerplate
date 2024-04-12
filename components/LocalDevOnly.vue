@@ -5,7 +5,7 @@ const container = () => {
   const slot = slots.default ? slots.default() : null;
   const config = useRuntimeConfig().public;
 
-  if (process.dev && config?.environment === "local" && slot) {
+  if (import.meta.dev && config?.environment === "local" && slot) {
     return h(
       "div",
       {

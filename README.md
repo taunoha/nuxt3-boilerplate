@@ -18,7 +18,7 @@ A Nuxt 3 starter boilerplate with a lot of useful features.
 
 ### Automation (optional)
 
-Feel free to remove the ``.github`` folder or the ``ecosystem.config.js`` file.
+Feel free to remove the ``.github`` folder and/or the ``ecosystem.config.js`` file.
 
 - [x] [Github Actions workflow](https://docs.github.com/en/actions/using-workflows/about-workflows) for automated CI/CD to remote server using SSH
 - [x] [pm2](https://pm2.keymetrics.io) config example file

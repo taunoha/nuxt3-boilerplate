@@ -18,9 +18,9 @@
     "node": "20.x"
   },
   "dependencies": {
-    "@nuxt/eslint": "^0.3.6",
+    "@nuxt/eslint": "^0.3.7",
     "@nuxtjs/tailwindcss": "^6.11.4",
-    "vue": "^3.4.21",
+    "vue": "^3.4.22",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
@@ -37,7 +37,7 @@
     "prettier-plugin-tailwindcss": "^0.5.13",
     "stylelint": "^16.3.1",
     "stylelint-config-prettier-scss": "^1.0.0",
-    "stylelint-config-recess-order": "^5.0.0",
+    "stylelint-config-recess-order": "^5.0.1",
     "stylelint-config-standard": "^36.0.0",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-config-tailwindcss": "^0.0.7",

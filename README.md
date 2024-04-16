@@ -23,3 +23,11 @@ Feel free to remove the ``.github`` folder and/or the ``ecosystem.config.js`` fi
 - [x] [Github Actions workflow](https://docs.github.com/en/actions/using-workflows/about-workflows) for automated CI/CD to remote server using SSH
 - [x] [pm2](https://pm2.keymetrics.io) config example file
 
+## Getting Started
+
+```shell
+$ git clone https://github.com/taunoha/nuxt3-boilerplate.git 
+$ npm install
+$ npm run dev
+```
+

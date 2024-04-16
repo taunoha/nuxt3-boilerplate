@@ -4,6 +4,9 @@ import prettier from "eslint-plugin-prettier/recommended";
 
 export default withNuxt([
   {
+    ignores: [".vscode/*"],
+  },
+  {
     files: ["**/*.ts", "**/*.vue", "*.mjs"],
     ...prettier,
   },

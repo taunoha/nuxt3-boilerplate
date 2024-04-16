@@ -27,6 +27,9 @@ Feel free to remove the ``.github`` folder and/or the ``ecosystem.config.js`` fi
 
 ```shell
 $ git clone https://github.com/taunoha/nuxt3-boilerplate.git 
+$ cd nuxt3-boilerplate
+$ rm -rf .git
+
 $ npm install
 $ npm run dev
 ```

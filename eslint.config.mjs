@@ -11,8 +11,9 @@ export default withNuxt([
     ...prettier,
   },
   {
-    files: ["*.vue"],
+    files: ["*.vue", "**/*.vue", "**/*.ts"],
     rules: {
+      "@typescript-eslint/no-explicit-any": "error",
       "vue/multi-word-component-names": "error",
       "prettier/prettier": [
         "error",

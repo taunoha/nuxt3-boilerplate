@@ -81,6 +81,7 @@ typings/
 # Nuxt dev/build outputs
 .output
 .nuxt
+dist
 
 # Gatsby files
 .cache/

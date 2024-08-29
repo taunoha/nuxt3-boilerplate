@@ -18,6 +18,9 @@
       "npm run typecheck"
     ]
   },
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "@nuxt/eslint": "^0.5.3",
     "@nuxt/icon": "^1.5.0",

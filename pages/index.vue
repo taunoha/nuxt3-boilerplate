@@ -6,10 +6,7 @@ const posts = ref<Post[]>([]);
 const { data, error } = await useFetch("/api/v1/posts");
 
 if (error.value) {
-  throw createError({
-    ...error.value,
-    statusMessage: "Posts Not Found",
-  });
+  throw createError({ ...error.value, statusMessage: "Posts Not Found" });
 }
 
 if (data.value) {

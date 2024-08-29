@@ -29,6 +29,6 @@ const container = () => {
 
 <template>
   <ClientOnly>
-    <component :is="container"></component>
+    <component :is="container" />
   </ClientOnly>
 </template>

@@ -22,21 +22,21 @@
     "node": "20.x"
   },
   "dependencies": {
-    "@nuxt/eslint": "^0.5.3",
-    "@nuxt/icon": "^1.5.0",
+    "@nuxt/eslint": "^0.5.7",
+    "@nuxt/icon": "^1.5.1",
     "@nuxtjs/tailwindcss": "^6.12.1",
-    "@vueuse/core": "^11.0.3",
-    "@vueuse/nuxt": "^11.0.3",
-    "nuxt": "^3.13.0",
-    "nuxt-security": "^2.0.0-rc.9",
+    "@vueuse/core": "^11.1.0",
+    "@vueuse/nuxt": "^11.1.0",
+    "nuxt": "^3.13.2",
+    "nuxt-security": "^2.0.0",
     "vue": "latest"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.4.1",
+    "@nuxt/devtools": "^1.4.2",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "husky": "^9.1.5",
-    "lint-staged": "^15.2.9",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
     "stylelint": "^16.9.0",
@@ -44,7 +44,7 @@
     "stylelint-config-standard": "^36.0.1",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-prettier": "^5.0.2",
-    "typescript": "^5.5.4",
-    "vue-tsc": "^2.1.2"
+    "typescript": "^5.6.2",
+    "vue-tsc": "^2.1.6"
   }
 }

@@ -14,13 +14,18 @@ export default withNuxt([
     files: ["*.vue", "**/*.vue", "**/*.ts"],
     rules: {
       "@typescript-eslint/no-explicit-any": "error",
-      "vue/multi-word-component-names": "error",
       "prettier/prettier": [
         "error",
         {
           htmlWhitespaceSensitivity: "ignore",
         },
       ],
+    },
+  },
+  {
+    files: ["*.vue", "**/*.ts"],
+    rules: {
+      "vue/multi-word-component-names": "error",
     },
   },
   {

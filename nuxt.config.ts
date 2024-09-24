@@ -19,6 +19,9 @@ export default defineNuxtConfig({
       title: "Hello, World!",
       titleTemplate: "%s - Nuxt3 Boilerplate",
       link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+      htmlAttrs: {
+        lang: "en",
+      },
     },
   },
   security: {

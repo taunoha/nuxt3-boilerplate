@@ -2,7 +2,7 @@
 export default {
   theme: {
     fontFamily: {
-      sans: ["Intel", "sans-serif"],
+      sans: ["Inter", "sans-serif"],
       mono: [
         "ui-monospace",
         "SFMono-Regular",

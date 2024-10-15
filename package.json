@@ -22,9 +22,9 @@
     "node": "20.x"
   },
   "dependencies": {
-    "@nuxt/eslint": "^0.5.7",
+    "@nuxt/eslint": "^0.6.0",
     "@nuxt/fonts": "^0.10.0",
-    "@nuxt/icon": "^1.5.1",
+    "@nuxt/icon": "^1.5.6",
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@vueuse/core": "^11.1.0",
@@ -34,19 +34,19 @@
     "vue": "latest"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.4.2",
+    "@nuxt/devtools": "^1.6.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.6",
-    "stylelint": "^16.9.0",
-    "stylelint-config-recess-order": "^5.1.0",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "stylelint": "^16.10.0",
+    "stylelint-config-recess-order": "^5.1.1",
     "stylelint-config-standard": "^36.0.1",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-prettier": "^5.0.2",
-    "typescript": "^5.6.2",
+    "typescript": "^5.6.3",
     "vue-tsc": "^2.1.6"
   }
 }

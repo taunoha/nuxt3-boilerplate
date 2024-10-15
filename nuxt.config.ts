@@ -9,10 +9,16 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "nuxt-security",
     "@nuxt/icon",
+    "@nuxt/image",
+    "@nuxt/fonts",
   ],
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
     configPath: "~/tailwind.config.mjs",
+  },
+  image: {
+    quality: 80,
+    format: ["webp"],
   },
   app: {
     head: {

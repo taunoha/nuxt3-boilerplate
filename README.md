@@ -9,6 +9,8 @@ A Nuxt 3 starter boilerplate with a lot of useful features.
 - [x] [VueUse](https://nuxt.com/modules/vueuse)
 - [x] [Tailwind CSS](https://nuxt.com/modules/tailwindcss)
 - [x] [Icons](https://nuxt.com/modules/icon)
+- [x] [Nuxt Image](https://image.nuxt.com/) A drop-in replacement for the native <img> tag.
+- [x] [Nuxt Fonts](https://fonts.nuxt.com/) Plug-and-play web font optimization and configuration 
 - [x] [Security](https://nuxt.com/modules/security) (among other things, it also offers an option to use Basic Auth authorization)
 
 ### 👉 Code quality and conventions

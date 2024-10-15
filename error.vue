@@ -26,7 +26,7 @@ useHead({
   <div class="flex min-h-dvh flex-col justify-center text-center">
     <main class="container">
       <div class="mb-5 text-2xl font-semibold opacity-70">{{ statusCode }}</div>
-      <h1 class="font-display mb-6 text-center text-4xl font-bold">
+      <h1 class="mb-6 text-center text-4xl font-bold">
         {{ is404 ? message : "An error occurred" }}
       </h1>
       <p class="mb-12">

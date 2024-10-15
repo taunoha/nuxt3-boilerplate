@@ -1,6 +1,6 @@
 # Nuxt3 Boilerplate
 
-A Nuxt 3 starter boilerplate with a lot of useful features.
+A Nuxt 3 starter template with a lot of useful features.
 
 ## Features
 
@@ -8,14 +8,14 @@ A Nuxt 3 starter boilerplate with a lot of useful features.
 - [x] [Vue](https://vuejs.org)
 - [x] [VueUse](https://nuxt.com/modules/vueuse)
 - [x] [Tailwind CSS](https://nuxt.com/modules/tailwindcss)
-- [x] [Icons](https://nuxt.com/modules/icon)
+- [x] [Nuxt Icons](https://nuxt.com/modules/icon)
 - [x] [Nuxt Image](https://image.nuxt.com/) A drop-in replacement for the native <img> tag.
 - [x] [Nuxt Fonts](https://fonts.nuxt.com/) Plug-and-play web font optimization and configuration 
-- [x] [Security](https://nuxt.com/modules/security) (among other things, it also offers an option to use Basic Auth authorization)
+- [x] [Security](https://nuxt.com/modules/security)
 
 ### 👉 Code quality and conventions
 
-- [x] ESLint ([Nuxt ESLint module](https://nuxt.com/modules/eslint)), Stylelint and Prettier to check the source code for programmatic and stylistic errors, and format your code as recommended by Vue, Nuxt and Tailwind CSS
+- [x] ESLint ([Nuxt ESLint module](https://nuxt.com/modules/eslint)), Stylelint, and Prettier to check the source code for programmatic and stylistic errors, and format your code as recommended by Vue, Nuxt and Tailwind CSS
 - [x] Git hooks with [Husky](https://typicode.github.io/husky/) and [lint-staged](https://github.com/okonet/lint-staged) to automatically lint and format your code upon committing.
 
 ### 👉 Automation (optional)

@@ -2,4 +2,8 @@
   .ct-inline {
     container-type: inline;
   }
+
+  .scroll-touch {
+    -webkit-overflow-scrolling: "touch";
+  }
 }

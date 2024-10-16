@@ -11,7 +11,7 @@
 }
 
 .fade-leave-active {
-  transition: opacity 0.32s ease 0.22s;
+  transition: opacity 0.32s ease 0.18s;
 }
 
 .fade-leave-from {

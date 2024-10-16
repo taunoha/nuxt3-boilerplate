@@ -12,7 +12,7 @@
       </Transition>
       <Transition name="slide-in-out">
         <DialogContent
-          class="fixed inset-0 z-[1001] overflow-hidden overflow-y-auto p-4"
+          class="scroll-touch fixed inset-0 z-[1001] overflow-hidden overflow-y-auto p-4"
         >
           <div
             class="relative mx-auto my-14 max-w-2xl rounded-lg bg-white p-8 text-black shadow-xl"

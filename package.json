@@ -13,7 +13,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{vue,ts}": [
+    "*.{vue,ts,css}": [
       "npm run lint",
       "npm run typecheck"
     ]
@@ -22,6 +22,7 @@
     "node": "20.x"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "@nuxt/eslint": "^0.6.0",
     "@nuxt/fonts": "^0.10.0",
     "@nuxt/icon": "^1.5.6",
@@ -31,6 +32,7 @@
     "@vueuse/nuxt": "^11.1.0",
     "nuxt": "^3.13.2",
     "nuxt-security": "^2.0.0",
+    "radix-vue": "^1.9.7",
     "vue": "latest"
   },
   "devDependencies": {

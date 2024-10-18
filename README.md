@@ -7,7 +7,7 @@ A Nuxt 3 starter template with a lot of useful features.
 - [x] [Nuxt](https://nuxt.com)
 - [x] [Vue](https://vuejs.org)
 - [x] [VueUse](https://nuxt.com/modules/vueuse)
-- [x] [Tailwind CSS](https://nuxt.com/modules/tailwindcss)
+- [x] [Tailwind](https://nuxt.com/modules/tailwindcss)
 - [x] [Tailwind Variants](https://www.tailwind-variants.org)
 - [x] [Radix Vue](https://www.radix-vue.com/) Unstyled, accessible components for building high‑quality design systems and web apps
 - [x] [Nuxt Icons](https://nuxt.com/modules/icon)

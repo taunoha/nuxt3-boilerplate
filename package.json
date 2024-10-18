@@ -33,6 +33,7 @@
     "nuxt": "^3.13.2",
     "nuxt-security": "^2.0.0",
     "radix-vue": "^1.9.7",
+    "tailwind-variants": "^0.2.1",
     "vue": "latest"
   },
   "devDependencies": {

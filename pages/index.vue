@@ -24,7 +24,7 @@ useHead({
       <Icon name="logos:nuxt-icon" class="mb-5" size="80" />
       <h1 class="mb-6 text-center text-5xl font-bold">Hello, World!</h1>
       <p class="mb-12 text-primary">Can you see me?</p>
-      <DialogModal>
+      <DialogModal size="xl">
         <template #trigger>Open Dialog</template>
         <template #title>Modal title</template>
         <p v-for="i in 20" :key="i" class="mb-4">

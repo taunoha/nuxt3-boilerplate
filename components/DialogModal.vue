@@ -1,4 +1,35 @@
-<script setup lang="ts"></script>
+<script lang="ts">
+import { tv, type VariantProps } from "tailwind-variants";
+
+const dialog = tv({
+  base: "relative mx-auto my-14 rounded-lg bg-white p-8 text-black shadow-xl",
+  variants: {
+    size: {
+      sm: "max-w-sm",
+      lg: "max-w-2xl",
+      xl: "max-w-4xl",
+    },
+  },
+});
+
+type DialogVariants = VariantProps<typeof dialog>;
+
+interface Props {
+  size?: DialogVariants["size"];
+}
+</script>
+
+<script setup lang="ts">
+const props = withDefaults(defineProps<Props>(), {
+  size: "lg",
+});
+const ui = computed(() =>
+  dialog({
+    size: props.size,
+  })
+);
+</script>
+
 <template>
   <DialogRoot>
     <DialogTrigger
@@ -14,9 +45,7 @@
         <DialogContent
           class="scroll-touch fixed inset-0 z-[1001] overflow-hidden overflow-y-auto p-4"
         >
-          <div
-            class="relative mx-auto my-14 max-w-2xl rounded-lg bg-white p-8 text-black shadow-xl"
-          >
+          <div :class="ui">
             <DialogTitle class="mb-4 text-2xl font-bold">
               <slot name="title" />
             </DialogTitle>

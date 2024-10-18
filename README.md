@@ -7,13 +7,13 @@ A Nuxt 3 starter template with a lot of useful features.
 - [x] [Nuxt](https://nuxt.com)
 - [x] [Vue](https://vuejs.org)
 - [x] [VueUse](https://nuxt.com/modules/vueuse)
-- [x] [Tailwind](https://nuxt.com/modules/tailwindcss)
+- [x] [Tailwind CSS](https://tailwindcss.com)
 - [x] [Tailwind Variants](https://www.tailwind-variants.org)
 - [x] [Radix Vue](https://www.radix-vue.com/) Unstyled, accessible components for building high‑quality design systems and web apps
 - [x] [Nuxt Icons](https://nuxt.com/modules/icon)
 - [x] [Nuxt Image](https://image.nuxt.com/) A drop-in replacement for the native <img> tag.
 - [x] [Nuxt Fonts](https://fonts.nuxt.com/) Plug-and-play web font optimization and configuration 
-- [x] [Security](https://nuxt.com/modules/security)
+- [x] [Security](https://nuxt-security.vercel.app/)
 
 ### 👉 Code quality and conventions
 

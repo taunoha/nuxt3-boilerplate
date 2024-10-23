@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "npx stylelint ./assets/css/**/*.css --fix && eslint . --fix",
+    "lint": "npx stylelint ./assets/css/**/*.css --fix && npx stylelint ./{components,pages,layouts}/**/*.vue --fix && eslint . --fix",
     "typecheck": "npx nuxi typecheck .",
     "prepare": "husky"
   },
@@ -46,6 +46,7 @@
     "prettier-plugin-tailwindcss": "^0.6.8",
     "stylelint": "^16.10.0",
     "stylelint-config-recess-order": "^5.1.1",
+    "stylelint-config-recommended-vue": "^1.5.0",
     "stylelint-config-standard": "^36.0.1",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-prettier": "^5.0.2",

@@ -4,6 +4,7 @@ export default {
     "stylelint-prettier/recommended",
     "stylelint-config-recess-order",
     "stylelint-config-standard-scss",
+    "stylelint-config-recommended-vue/scss",
   ],
   rules: {
     "prettier/prettier": true,

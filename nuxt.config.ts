@@ -17,6 +17,13 @@ export default defineNuxtConfig({
     cssPath: "~/assets/css/main.css",
     configPath: "~/tailwind.config.mjs",
   },
+  postcss: {
+    plugins: {
+      cssnano: {
+        preset: "default",
+      },
+    },
+  },
   image: {
     quality: 80,
     format: ["webp"],

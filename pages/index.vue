@@ -21,7 +21,9 @@ useHead({
 <template>
   <div class="flex min-h-dvh flex-col justify-center text-center">
     <main class="container">
-      <Icon name="logos:nuxt-icon" class="mb-5" size="80" />
+      <div class="mb-6 flex justify-center">
+        <Icon name="logos:nuxt-icon" size="80" />
+      </div>
       <h1 class="mb-6 text-center text-5xl font-bold">Hello, World!</h1>
       <p class="mb-12 text-primary">Can you see me?</p>
       <DialogModal size="xl">

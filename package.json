@@ -19,10 +19,9 @@
     ]
   },
   "engines": {
-    "node": "20.x"
+    "node": "22.x"
   },
   "dependencies": {
-    "@formkit/auto-animate": "^0.8.2",
     "@nuxt/eslint": "^0.7.2",
     "@nuxt/fonts": "^0.10.2",
     "@nuxt/icon": "^1.8.2",
